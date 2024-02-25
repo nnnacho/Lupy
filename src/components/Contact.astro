@@ -118,23 +118,30 @@
             </ul>
           </div>
         </div>
-        <form class="ml-auo space-y-4">
+        <form
+          class="ml-auo space-y-4"
+          action="https://formsubmit.co/incarmijo@gmail.com"
+          method="POST"
+        >
           <input
             type="text"
             placeholder="Nombre"
             required
+            name="Nombre"
             class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#ff8e3c]"
           />
           <input
             type="email"
             placeholder="Email"
             required
+            name="Email"
             class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#ff8e3c]"
           />
           <textarea
             placeholder="Mensaje"
             rows="6"
             required
+            name="Mensaje"
             class="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#ff8e3c]"
           ></textarea>
           <button
@@ -143,6 +150,13 @@
             class="text-white bg-[#ff8e3c] hover:bg-[#ff8d3cec] font-semibold rounded-md text-sm px-4 py-2.5 w-full"
             >Enviar</button
           >
+          <input
+            type="hidden"
+            name="_next"
+            value="https://porfolio-ignacio.vercel.app/"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
         </form>
       </div>
     </div>
