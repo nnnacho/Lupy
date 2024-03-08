@@ -1,4 +1,3 @@
-console.log("cargo el js");
 function sendMail() {
   const params = {
     email_id: document.getElementById("email_id").value,
